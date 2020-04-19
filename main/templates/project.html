@@ -1,5 +1,12 @@
 {% extends "temps/base.html" %}
 
 {% block body %}
-
+<div class="container">
+    <span class="display-4">{{project.name}}</span>
+    <div class="lead">
+        {{project.description}}
+        <br>
+        <a class="card-link btn btn-primary" style="color:white; margin-top: 1em">Go to</a>
+    </div>
+</div>
 {% endblock body %}

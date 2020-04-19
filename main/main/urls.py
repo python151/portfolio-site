@@ -27,5 +27,5 @@ urlpatterns = [
     path('Resume/', front.resume),
     path('Contact/', front.contact),
     path('Projects/', front.projects),
-    path('Project/<int:id>/', front.project),
+    path('project/<int:id>/', front.project),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

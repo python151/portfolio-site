@@ -27,4 +27,9 @@ def projects(request):
     })
 
 def project(request, id):
-    return render(request, "project.html")
+    project = Project.objects.filter(id=id)
+    if not project.exists():
+        return render(request, "404.html")
+    return render(request, "project.html", {
+        "project": project.get()
+    })
