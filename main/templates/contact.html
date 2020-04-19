@@ -1,0 +1,49 @@
+{% extends "temps/base.html" %}
+
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}" />
+{% endblock head %}
+
+{% block body %}
+<span class="display-4">Contact me</span>
+<ul class="list-unstyled contact-list">
+  <li class="media">
+    <img src="{% static 'img/github.jpg' %}" height="64" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Github</h5>
+      Github is a platform based off of the git version control system.
+      <br>
+      <a class="card-link" href="https://github.com/python151/" target="_">Go to.</a>
+    </div>
+  </li>
+  <li class="media">
+    <img src="{% static 'img/stackoverflow.png' %}" height="64" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Stack Overflow</h5>
+      This is a platform for developers to ask questions and get awnsers relating to programming.
+      <br>
+      <a target="_" href="https://stackoverflow.com/users/10033231/python151" class="card-link">Go to.</a>
+    </div>
+  </li>
+  <li class="media">
+    <img src="{% static 'img/email.png' %}" height="64" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Email</h5>
+      dogm646@gmail.com
+      <br>
+      <a href="mailto:dogm646@gmail.com" class="card-link">Email me.</a>
+    </div>
+  </li>
+  <li class="media">
+    <img src="{% static 'img/call.png' %}" height="64" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Phone</h5>
+      (817) 988-2615
+      <br>
+      <a href="tel:8179882615" class="card-link">Call.</a>
+    </div>
+  </li>
+</ul>
+{% endblock body %}

@@ -1,0 +1,17 @@
+{% extends "temps/base.html" %}
+
+{% block body %}
+<span class="display-4" style="margin: 1em 3em">My Projects</span>
+<div class="col" style="margin-top: 2em">
+{% for project in projects %}
+    <div class="row-100">
+        <div class="jumbotron jumbotron-fluid" style="border-radius: 8px; background-color: transparent;">
+            <div class="container">
+                <a href="{{project.link}}" style="color: black;"><h1 class="display-5">{{project.name}}</h1></a>
+                <p class="lead">{{project.description}}</p>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock body %}

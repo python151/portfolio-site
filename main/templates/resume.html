@@ -1,0 +1,7 @@
+{% extends "temps/base.html" %}
+
+{% load static %}
+
+{% block body %}
+<embed src="{% static 'img/Resume.pdf' %}" type="application/pdf" width="100%" height="800" pages=1 />
+{% endblock body %}
